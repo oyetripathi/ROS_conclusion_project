@@ -24,8 +24,10 @@ cd ~/tiago_public_ws
 
 Download the file tiago_public.rosinstall given in this repo. Copy the rosinstall file in ~/tiago_public_ws. Then run the following instruction in order to clone all the required repositories within the workspace:
 
-bash 
+```bash
+cd ~/tiago_public_ws
 rosinstall src /opt/ros/melodic tiago_public.rosinstall
+```
 
 
 Set up **rosdep**  
@@ -40,15 +42,23 @@ Then you may run the following instruction to make sure that all dependencies re
 ```bash
 rosdep install --from-paths src --ignore-src -y --rosdistro melodic --skip-keys="opencv2 opencv2-nonfree pal_laser_filters speed_limit_node sensor_to_cloud hokuyo_node libdw-dev python-graphitesend-pip python-statsd pal_filters pal_vo_server pal_usb_utils pal_pcl pal_pcl_points_throttle_and_filter pal_karto pal_local_joint_control camera_calibration_files pal_startup_msgs pal-orbbec-openni2 dummy_actuators_manager pal_local_planner gravity_compensation_controller current_limit_controller dynamic_footprint dynamixel_cpp tf_lookup opencv3 joint_impedance_trajectory_controller"
 ```
-Now download the src folder from the repo and replace the src folder inside the tiago_public_ws folder with this one.  
+Now download the zipped src folder from [here](https://drive.google.com/file/d/1KvNoOdO7b1oyGpVaGhazCAAMgvIiR6-y/view?usp=sharing),extract it and replace the src folder inside the tiago_public_ws folder with this one.  
+  
+Now we have to give our script executable permissions. Do the following-  
+
+```bash  
+cd ~/tiago_public_ws
+chmod +x src/pal_navigation_cfg_public/pal_navigation_cfg_tiago/scripts/mypoint.py
+```
 
 Then, you may proceed with building the workspace: 
 
 ```bash
+cd ~/tiago_public_ws
 source /opt/ros/melodic/setup.bash
 catkin build -DCATKIN_ENABLE_TESTING=0
 ```
-
+    
 Once you have compiled all the packages and sourced the workspace (*source devel/setup.bash*) .  
   
   
