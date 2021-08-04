@@ -1,0 +1,51 @@
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_ListControllers
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_UnloadController
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_HardwareInterfaceResources
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_ListControllerTypes
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_ReloadControllerLibraries
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_LoadController
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_ControllerState
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_ControllersStatistics
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_SwitchController
+[  0%] Built target _controller_manager_msgs_generate_messages_check_deps_ControllerStatistics
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[ 18%] Built target controller_manager_msgs_generate_messages_nodejs
+[ 20%] [34m[1mGenerating EusLisp manifest code for controller_manager_msgs[0m
+[ 43%] Built target controller_manager_msgs_generate_messages_py
+[ 62%] Built target controller_manager_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target controller_manager_msgs_generate_messages_cpp[0m
+[ 64%] [34m[1mGenerating C++ code from controller_manager_msgs/ControllerStatistics.msg[0m
+[ 66%] [34m[1mGenerating C++ code from controller_manager_msgs/HardwareInterfaceResources.msg[0m
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/geneus/geneus_main.py", line 137, in genmain
+    pkg_map = get_pkg_map()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/geneus/geneus_main.py", line 56, in get_pkg_map
+    pkgs = packages.find_packages(ws)
+  File "/usr/lib/python2.7/dist-packages/catkin_pkg/packages.py", line 96, in find_packages
+    raise RuntimeError('\n'.join(duplicates))
+RuntimeError: Multiple packages found with the same name "urdf_tutorial":
+- include/urdf_tutorial
+- share/urdf_tutorial
+ERROR:  Multiple packages found with the same name "urdf_tutorial":
+- include/urdf_tutorial
+- share/urdf_tutorial
+CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make:125: recipe for target '/home/sandeepan/tiago_public_ws/devel/.private/controller_manager_msgs/share/roseus/ros/controller_manager_msgs/manifest.l' failed
+make[2]: *** [/home/sandeepan/tiago_public_ws/devel/.private/controller_manager_msgs/share/roseus/ros/controller_manager_msgs/manifest.l] Error 3
+make[1]: *** [CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/all] Error 2
+CMakeFiles/Makefile2:301: recipe for target 'CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/all' failed
+make[1]: *** Waiting for unfinished jobs....
+[ 67%] [34m[1mGenerating C++ code from controller_manager_msgs/ControllerState.msg[0m
+[ 69%] [34m[1mGenerating C++ code from controller_manager_msgs/ListControllers.srv[0m
+[ 71%] [34m[1mGenerating C++ code from controller_manager_msgs/ControllersStatistics.msg[0m
+[ 73%] [34m[1mGenerating C++ code from controller_manager_msgs/UnloadController.srv[0m
+[ 75%] [34m[1mGenerating C++ code from controller_manager_msgs/ListControllerTypes.srv[0m
+[ 77%] [34m[1mGenerating C++ code from controller_manager_msgs/ReloadControllerLibraries.srv[0m
+[ 79%] [34m[1mGenerating C++ code from controller_manager_msgs/SwitchController.srv[0m
+[ 81%] [34m[1mGenerating C++ code from controller_manager_msgs/LoadController.srv[0m
+[ 81%] Built target controller_manager_msgs_generate_messages_cpp
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

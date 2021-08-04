@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/geneus/geneus_main.py", line 137, in genmain
+    pkg_map = get_pkg_map()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/geneus/geneus_main.py", line 56, in get_pkg_map
+    pkgs = packages.find_packages(ws)
+  File "/usr/lib/python2.7/dist-packages/catkin_pkg/packages.py", line 96, in find_packages
+    raise RuntimeError('\n'.join(duplicates))
+RuntimeError: Multiple packages found with the same name "urdf_tutorial":
+- include/urdf_tutorial
+- share/urdf_tutorial
+make[2]: *** [/home/sandeepan/tiago_public_ws/devel/.private/aruco_msgs/share/roseus/ros/aruco_msgs/manifest.l] Error 3
+make[1]: *** [CMakeFiles/aruco_msgs_generate_messages_eus.dir/all] Error 2
+make: *** [all] Error 2

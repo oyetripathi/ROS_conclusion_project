@@ -1,0 +1,42 @@
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _aruco_msgs_generate_messages_check_deps_Marker
+[  0%] Built target _aruco_msgs_generate_messages_check_deps_MarkerArray
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  8%] [34m[1mGenerating EusLisp manifest code for aruco_msgs[0m
+[35m[1mScanning dependencies of target aruco_msgs_generate_messages_py[0m
+[ 16%] [34m[1mGenerating Python from MSG aruco_msgs/MarkerArray[0m
+[ 25%] [34m[1mGenerating Python from MSG aruco_msgs/Marker[0m
+[ 33%] [34m[1mGenerating Python msg __init__.py for aruco_msgs[0m
+[ 33%] Built target aruco_msgs_generate_messages_py
+[35m[1mScanning dependencies of target aruco_msgs_generate_messages_lisp[0m
+[ 41%] [34m[1mGenerating Lisp code from aruco_msgs/MarkerArray.msg[0m
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/geneus/geneus_main.py", line 137, in genmain
+    pkg_map = get_pkg_map()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/geneus/geneus_main.py", line 56, in get_pkg_map
+    pkgs = packages.find_packages(ws)
+  File "/usr/lib/python2.7/dist-packages/catkin_pkg/packages.py", line 96, in find_packages
+    raise RuntimeError('\n'.join(duplicates))
+RuntimeError: Multiple packages found with the same name "urdf_tutorial":
+- include/urdf_tutorial
+- share/urdf_tutorial
+ERROR:  Multiple packages found with the same name "urdf_tutorial":
+- include/urdf_tutorial
+- share/urdf_tutorial
+CMakeFiles/aruco_msgs_generate_messages_eus.dir/build.make:83: recipe for target '/home/sandeepan/tiago_public_ws/devel/.private/aruco_msgs/share/roseus/ros/aruco_msgs/manifest.l' failed
+CMakeFiles/Makefile2:795: recipe for target 'CMakeFiles/aruco_msgs_generate_messages_eus.dir/all' failed
+make[2]: *** [/home/sandeepan/tiago_public_ws/devel/.private/aruco_msgs/share/roseus/ros/aruco_msgs/manifest.l] Error 3
+make[1]: *** [CMakeFiles/aruco_msgs_generate_messages_eus.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 50%] [34m[1mGenerating Lisp code from aruco_msgs/Marker.msg[0m
+[ 50%] Built target aruco_msgs_generate_messages_lisp
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
